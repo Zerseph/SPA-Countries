@@ -1,7 +1,7 @@
 <h1 align="center">  Individual Project Countries!</h1>
 This is an individual project in which I must build a Single Page Application using the technologies: React, Redux, Node, Express, and Sequelize.
 
-<h2 align="left">🔧:earth_americas: Instalation </h2>
+<h2 align="left">🔧 Instalation </h2>
 
 If you want to be able to have this project, you can apply the following command in your console: 
 
