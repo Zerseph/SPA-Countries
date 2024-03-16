@@ -1,0 +1,178 @@
+/* Estilos para el contenedor principal de la actividad */
+.activityContainer {
+  margin: 20px auto;
+  /* Margen automático en la parte superior e inferior */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+  max-width: 500px;
+}
+
+/* Estilos para el formulario de actividad */
+.activityForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el título del formulario de actividad */
+/* Estilos para el título del formulario de actividad */
+.activityFormTitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: linear-gradient(45deg, rgba(52, 152, 219, 0.8), rgba(15, 103, 94, 0.8));
+  padding: 10px;
+  border-radius: 20px;
+  /* Sombra sutil y difuminado de bordes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1) inset;
+  /* Sombra de texto */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Estilos para las etiquetas de los campos */
+.labelName,
+.labelDifficulty,
+.labelDuration,
+.labelSeason {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.inputName,
+.selectDifficulty,
+.inputDuration,
+.selectSeason,
+.selectACountry {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #0f675e1d;
+  /* Color de fondo predeterminado */
+  color: #495057;
+  /* Color de texto predeterminado */
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.inputName:focus,
+.selectDifficulty:focus,
+.inputDuration:focus,
+.selectSeason:focus,
+.selectACountry:focus {
+  outline: none;
+  border-color: #6c757d;
+  /* Cambia el color del borde cuando está enfocado */
+  background-color: rgba(212, 234, 251, 0.838);
+  /* Cambia el color de fondo cuando está enfocado */
+  color: #555;
+  /* Cambia el color de texto cuando está enfocado */
+}
+
+/* Estilos para el título de las etiquetas de país */
+.tittleFormCountries {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+/* Estilos para el contenedor de las etiquetas de país */
+.allEtiquetaCountries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de país */
+.aEtiquetaCountry {
+  background-color: #0f675e9e;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100px;
+  /* Este ajusta el ancho mínimo según sea necesario */
+}
+
+/* Estilos para eliminar etiquetas de país */
+.removeEtiquetaCountry {
+  background-color: #ffffff;
+  color: #0f675e9e;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Estilos al pasar el mouse sobre eliminar etiquetas de país */
+.removeEtiquetaCountry:hover {
+  background-color: #c4e1f7;
+  color: #ffffff;
+}
+
+/* Estilos para el botón de enviar */
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos al pasar el mouse sobre el botón de enviar */
+.submitButton:hover {
+  background-color: #125399;
+}
+
+/* Estilos para mensajes de éxito y error */
+.errorMessageGeneral {
+  font-weight: bold;
+  margin: 5px 0;
+  color: #dc3545;
+}
+
+.errorMessage {
+  margin-top: 0px;
+  color: #812a2aed;
+}
+
+.successMessage {
+  color: #28a745;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.backToHomeButton {
+  /* Estilos del botón de regreso a la página de inicio */
+  /* Puedes personalizar los estilos según tus preferencias */
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.highlightedField {
+  background-color: #ffcccc; /* Cambia el color de fondo a rojo claro */
+  transition: background-color 1s ease; /* Animación de transición */
+}

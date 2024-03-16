@@ -1,0 +1,62 @@
+.card {
+    position: relative;
+    display: grid; /* Usa una cuadrícula para organizar los elementos */
+    grid-template-rows: auto 1fr auto auto; /* Establece el tamaño de las filas */
+    border: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    height: 240px;
+    width: 180px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.bandera {
+    width: 100%; /* Ocupa el ancho completo de la cuadrícula */
+    height: 120px;
+    object-fit: cover;
+    border-bottom: 1px solid #000000;
+}
+
+.titulo {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 2rem;
+}
+
+.continente,
+.capital {
+    font-size: 0.7rem;
+    color: #555;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.boton {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3273fe;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #2980b9;
+    }
+}

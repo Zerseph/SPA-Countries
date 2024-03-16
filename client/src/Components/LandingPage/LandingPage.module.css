@@ -1,0 +1,58 @@
+/* LandingPage.module.css */
+
+/* Contenedor principal que alinea y centra los elementos verticalmente */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Orientación de columna para alinear elementos verticalmente */
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center; /* Centra horizontalmente los elementos */
+  background: url('../Img/landingpage.jpg');
+  background-size: cover; /* Ajusta el tamaño del fondo para cubrir completamente el contenedor */
+  background-position: center; /* Centra el fondo */
+  text-align: center;
+  color: white; 
+  padding: 20px;
+}
+
+/* Estilo del botón de exploración con animaciones */
+.exploreButton {
+  background-color: #f76c6c; 
+  color: white; 
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Agregada animación a la transformación y al cambio de color */
+  margin-top: 10px;
+}
+
+/* Cambios al pasar el mouse sobre el botón */
+.exploreButton:hover {
+  background-color: #f44336; 
+  transform: scale(1.05);
+}
+
+/* Estilo del texto con animación de entrada */
+.styleText {
+  background-color: rgba(111, 82, 237, 0.8); 
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease;
+}
+
+/* Animación de entrada del texto */
+@keyframes fadeInUp {
+  from {
+    opacity: 0; 
+    transform: translateY(20px); /* Desplazamiento hacia arriba */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Sin desplazamiento vertical */
+  }
+}

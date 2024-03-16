@@ -1,0 +1,44 @@
+/* Agrega estilos para el modal */
+.activityModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la superposición del modal osea el entorno  */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el botón de cierre */
+.closeButton {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+  background-color: #eb5858f3;
+}
+
+.createActivityButton {
+  background-color: #0d8bae;
+  color: #FFFFFF; /* Color de texto blanco para mayor contraste */
+  border: 2px solid black; /* Borde negro sólido */
+  border-radius: 5px; /* Añadir esquinas redondeadas */
+  font-weight: bold;
+  -webkit-text-stroke-width: 0.2px; /* Grosor del borde del texto */
+  -webkit-text-stroke-color: black; /* Color del borde del texto */
+  font-size: 16px;
+}

@@ -1,0 +1,53 @@
+.filterBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.filterBar div {
+  margin-right: 20px;
+}
+
+.filterBar select {
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  background-color: #0d8bae;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input {
+  padding: 5px;
+  border: 2px solid #00000045;
+  border-radius: 3px;
+}
+
+
+.botClearFilters {
+  background-color: #c3dff2;
+  color: #000000;
+  border-color: #000000;
+  font-size: 13px;
+  border: 0.1px solid black;
+  border-radius: 5px;
+}
+
+.botClearFilters:hover {
+  background-color: #badcf2;
+  transition: background-color 0.3s ease;
+}

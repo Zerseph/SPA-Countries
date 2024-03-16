@@ -1,0 +1,61 @@
+.contpag {
+  display: flex;
+  justify-content: center;
+}
+
+.botpag {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 10px;
+  margin-right: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botpag:hover {
+  background-color: #c3dff2;
+}
+
+.currentPage {
+  background-color: #00000056;
+  color: white;
+}
+
+.currentPage:hover {
+  background-color: #0000004c;
+}
+
+.navButtonRight {
+  background-color: #c3dff2;
+  color: #000000b7;
+  padding: 8px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  padding-top: 1px;
+  padding-bottom: 8px
+}
+
+.navButtonLeft {
+  background-color: #c3dff2;
+  color: #000000b7;
+  padding: 8px 10px !important; /* Añade !important para dar prioridad */
+  margin-right: -39px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  padding-top: 1px !important; /* Añade padding específico para la parte superior */
+  padding-bottom: 8px !important; /* Añade padding específico para la parte inferior */
+  z-index: 1;
+}
+
+.navButtonRight:hover,
+.navButtonLeft:hover {
+  background-color: #badcf2;
+}

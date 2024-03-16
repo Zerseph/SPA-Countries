@@ -1,0 +1,119 @@
+
+/* Estilos para el contenedor principal de la página de detalles del país */
+.detailsContainer {
+    display: flex; 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #629dfc, #cde8fa);
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Estilos para la parte izquierda del contenedor (bandera y propiedades del país) */
+.detailsLeft {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para la imagen de la bandera */
+.detailsLeft img {
+    width: 200px; /* Ancho fijo para la imagen */
+    max-height: 200px; /* Altura máxima para la imagen */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+/* Estilos para el título del país */
+.detailsLeft h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+/* Estilos para los párrafos de las propiedades del país */
+.detailsLeft p {
+    font-size: 16px; 
+    margin-bottom: 8px; 
+    color: #666;
+}
+
+/* Estilos para el contenedor de las actividades */
+.activitiesContainer {
+    flex: 1; /* La parte derecha ocupa todo el espacio disponible */
+    padding-left: 20px;
+}
+
+/* Estilos para la lista de actividades */
+.activitiesList {
+    list-style-type: none; /* Quita los estilos de lista */
+    padding: 0; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada actividad */
+.activityItem {
+    border: 1px solid #ddd;
+    padding: 8px; 
+    margin-right: 8px; 
+    margin-bottom: 8px;
+    border-radius: 8px; 
+    background-color: #fff; 
+    text-align: center; 
+    flex: 1;
+}
+
+/* Estilos para el nombre de la actividad */
+.activityName {
+    font-weight: bold; 
+    color: #333;
+}
+
+/* Estilos para la información de la actividad (temporada, dificultad y duración) */
+.activityInfo {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Estilos para el ID de la actividad */
+.activityId {
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #666; /* Color del texto */
+}
+
+/* Estilos para el botón de volver */
+.backButton {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de ratón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para el botón de volver al pasar el ratón */
+.backButton:hover {
+    background-color: #258cd1; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .detailsContainer {
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+    }
+
+    .detailsLeft img {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .activitiesContainer {
+        padding-left: 0;
+    }
+}
